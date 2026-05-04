@@ -64,14 +64,14 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette: Warm Terracotta & Sage */
-  --terracotta: oklch(0.58 0.13 32);
-  --terracotta-deep: oklch(0.48 0.14 32);
-  --sage: oklch(0.74 0.04 145);
-  --sage-deep: oklch(0.55 0.05 145);
-  --sand: oklch(0.94 0.02 90);
-  --cream: oklch(0.97 0.012 85);
-  --ink: oklch(0.22 0.01 60);
+  /* Brand palette: Classic & Simple — cream, ink, soft clay accent */
+  --terracotta: oklch(0.55 0.07 38);
+  --terracotta-deep: oklch(0.42 0.06 38);
+  --sage: oklch(0.78 0.025 140);
+  --sage-deep: oklch(0.58 0.03 140);
+  --sand: oklch(0.95 0.012 85);
+  --cream: oklch(0.975 0.008 85);
+  --ink: oklch(0.2 0.008 60);
 
   --background: var(--cream);
   --foreground: var(--ink);
