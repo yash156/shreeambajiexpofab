@@ -32,11 +32,15 @@ export const Route = createRootRoute({
       { title: "Shree Ambaji Expo Fab — Fabric & Home Textile House" },
       { name: "description", content: "Manufacturer & supplier of digital printed fabrics, cotton, rayon, viscose and bedsheets from Ahmedabad. Trusted by leading Indian brands & exporters." },
       { name: "author", content: "Shree Ambaji Expo Fab" },
-      { property: "og:title", content: "Shree Ambaji Expo Fab — Textile House, Ahmedabad" },
-      { property: "og:description", content: "Digital prints, apparel fabrics & home textiles for India's leading brands and exporters." },
+      { property: "og:title", content: "Shree Ambaji Expo Fab — Fabric & Home Textile House" },
+      { property: "og:description", content: "Manufacturer & supplier of digital printed fabrics, cotton, rayon, viscose and bedsheets from Ahmedabad. Trusted by leading Indian brands & exporters." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Shree Ambaji Expo Fab — Fabric & Home Textile House" },
+      { name: "twitter:description", content: "Manufacturer & supplier of digital printed fabrics, cotton, rayon, viscose and bedsheets from Ahmedabad. Trusted by leading Indian brands & exporters." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7b3e784a-60c1-408e-83af-454e0be5988b/id-preview-f47af67e--cbfc52d4-e599-4877-be28-89303cb6cf3c.lovable.app-1777894329857.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7b3e784a-60c1-408e-83af-454e0be5988b/id-preview-f47af67e--cbfc52d4-e599-4877-be28-89303cb6cf3c.lovable.app-1777894329857.png" },
     ],
     links: [
       {
