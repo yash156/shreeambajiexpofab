@@ -91,7 +91,7 @@ function Hero() {
         height={1920}
         className="absolute inset-0 w-full h-full object-cover opacity-90"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/30 to-black/80" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 pt-40 md:pt-48 pb-20 min-h-screen flex flex-col justify-between">
         <div className="max-w-3xl fade-up">
