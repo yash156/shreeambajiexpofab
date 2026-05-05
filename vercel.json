@@ -3,7 +3,8 @@
   "installCommand": "bun install",
   "outputDirectory": "dist/client",
   "framework": null,
-  "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/_shell.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
