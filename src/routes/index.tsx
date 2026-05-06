@@ -271,6 +271,11 @@ function Contact() {
         </div>
         <div className="md:col-span-5 md:pt-10 space-y-8">
           <div>
+            <p className="eyebrow text-muted-foreground mb-2">Partners</p>
+            <p className="font-display text-2xl">Bhaumik Shah</p>
+            <p className="font-display text-2xl">Akshay Shah</p>
+          </div>
+          <div>
             <p className="eyebrow text-muted-foreground mb-2">Telephone</p>
             <a href="tel:9638052342" className="font-display text-2xl md:text-3xl hover:underline underline-offset-8">
               +91 96380 52342
