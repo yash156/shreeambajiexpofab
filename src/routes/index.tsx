@@ -280,6 +280,10 @@ function Contact() {
             <p className="eyebrow text-muted-foreground mb-2">Studio</p>
             <p className="font-display text-2xl">Ahmedabad, Gujarat</p>
           </div>
+          <div>
+            <p className="eyebrow text-muted-foreground mb-2">GSTIN</p>
+            <p className="font-display text-2xl tracking-wide">24AFTFS2858G1ZH</p>
+          </div>
           <a
             href="tel:9638052342"
             className="eyebrow inline-flex items-center gap-3 bg-foreground text-background px-6 py-3.5 hover:bg-foreground/85 transition"
@@ -296,7 +300,10 @@ function Footer() {
   return (
     <footer>
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row justify-between gap-4 items-start md:items-center">
-        <p className="font-display text-lg">Shree Ambaji Expo Fab</p>
+        <div>
+          <p className="font-display text-lg">Shree Ambaji Expo Fab</p>
+          <p className="eyebrow text-muted-foreground mt-1">GSTIN: 24AFTFS2858G1ZH</p>
+        </div>
         <p className="eyebrow text-muted-foreground">
           © {new Date().getFullYear()} — All rights reserved
         </p>
