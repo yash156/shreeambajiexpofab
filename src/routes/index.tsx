@@ -35,6 +35,69 @@ const strengths = [
   "Reliable and timely delivery",
 ];
 
+const partners = [
+  {
+    name: "Akshay Shah",
+    role: "Co-Founder · Operations & Trade",
+    bio: "Four decades in the textile industry with deep, hands-on command of the courtdroid (cord-routing) process and the broader weaving-to-finishing pipeline. Akshay leads sourcing, costing, vendor relationships and large-format production planning — bringing the kind of judgement only a lifetime on the shop floor can build.",
+  },
+  {
+    name: "Bhaumik Shah",
+    role: "Co-Founder · Design & Print Development",
+    bio: "Specialist in contemporary print design and modern surface development across digital, rotary and flat-bed techniques. Bhaumik drives the in-house design studio, colour & repeat development, sampling and brand-facing creative — translating trend direction into production-ready artwork for exporters and D2C brands.",
+  },
+];
+
+const facilities = [
+  {
+    code: "A",
+    title: "In-House Operations",
+    desc: "A fully integrated unit under one roof — built to serve export-oriented brands end-to-end.",
+    items: [
+      {
+        n: "A1",
+        title: "Stitching — Swaddles & Bedsheets",
+        desc: "Dedicated stitching lines for swaddles and bedsheets calibrated to export tolerances, with size-set approvals, hem & seam consistency and audit-ready workflows.",
+      },
+      {
+        n: "A2",
+        title: "Quality Control",
+        desc: "Multi-stage QC across greige, post-print and post-stitch — covering shade, GSM, shrinkage, fastness and visual defects to AQL standards expected by global buyers.",
+      },
+      {
+        n: "A3",
+        title: "Warehousing",
+        desc: "Organised warehousing for greige, finished goods and packed cartons with batch-level traceability, ensuring on-time despatch for both domestic and export consignments.",
+      },
+      {
+        n: "A4",
+        title: "Customised Packaging",
+        desc: "Brand-specific packaging — printed sleeves, belly bands, hangtags, polybags and master cartons developed to each buyer's barcode, labelling and retail-ready specifications.",
+      },
+      {
+        n: "A5",
+        title: "Design Studio",
+        desc: "An in-house studio for print design, repeats, colourways, mock-ups and seasonal collections — supporting brands from mood-board to production-ready artwork.",
+      },
+    ],
+  },
+  {
+    code: "B",
+    title: "Custom Weaving",
+    desc: "Made-to-spec base cloth in cotton, rayon and viscose blends — engineered to required width, GSM, count and construction for printing or finished-fabric programmes.",
+  },
+  {
+    code: "C",
+    title: "Dobby Weaving",
+    desc: "Dobby looms for textured and small-figured weaves — adding structure, geometric motifs and tactile interest to apparel and home-textile bases.",
+  },
+  {
+    code: "D",
+    title: "Yarn-Dyed Fabrics",
+    desc: "Yarn-dyed programmes with strong colour penetration and fastness — checks, stripes and engineered patterns woven from pre-dyed yarns for a richer, longer-lasting finish.",
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
