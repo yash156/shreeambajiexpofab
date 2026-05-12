@@ -126,8 +126,9 @@ function Nav() {
         </a>
         <nav className="hidden md:flex items-center gap-10 eyebrow text-foreground/70">
           <a href="#about" className="hover:text-foreground transition">About</a>
+          <a href="#partners" className="hover:text-foreground transition">Partners</a>
           <a href="#products" className="hover:text-foreground transition">Products</a>
-          <a href="#clients" className="hover:text-foreground transition">Clients</a>
+          <a href="#facilities" className="hover:text-foreground transition">Facilities</a>
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
       </div>
