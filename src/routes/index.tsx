@@ -104,10 +104,12 @@ function Index() {
       <Nav />
       <Hero />
       <About />
+      <Partners />
       <Products />
       <Showcase />
+      <Facilities />
+      <Forte />
       <Strengths />
-      <Clients />
       <Contact />
       <Footer />
     </div>
