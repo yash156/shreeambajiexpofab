@@ -291,35 +291,142 @@ function Strengths() {
   );
 }
 
-function Clients() {
-  const clients = ["Haus & Kinder", "Nestasia", "Polka Tots"];
+function Partners() {
   return (
-    <section id="clients" className="border-b border-border">
+    <section id="partners" className="border-b border-border">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-24 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-14">
           <div className="md:col-span-4">
-            <p className="eyebrow text-muted-foreground">— Clients</p>
+            <p className="eyebrow text-muted-foreground">— Partners</p>
           </div>
           <div className="md:col-span-8">
             <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.1] tracking-tight">
-              A short list of brands we are proud to supply.
+              Two generations of textile craft, working side by side.
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-border">
-          {clients.map((c) => (
-            <div
-              key={c}
-              className="py-12 border-b md:border-b-0 md:border-r last:md:border-r-0 border-border text-center"
-            >
-              <p className="font-display text-3xl md:text-4xl italic">{c}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 border-t border-border pt-14">
+          {partners.map((p) => (
+            <article key={p.name} className="space-y-4">
+              <p className="eyebrow text-muted-foreground">{p.role}</p>
+              <h3 className="font-display text-3xl md:text-4xl">{p.name}</h3>
+              <p className="text-foreground/75 leading-relaxed text-lg max-w-md">
+                {p.bio}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Facilities() {
+  return (
+    <section id="facilities" className="border-b border-border">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-24 md:py-32">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-14">
+          <div className="md:col-span-4">
+            <p className="eyebrow text-muted-foreground">— Our Facility</p>
+          </div>
+          <div className="md:col-span-8">
+            <h2 className="font-display text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] tracking-tight">
+              An integrated set-up — from yarn to packed carton.
+            </h2>
+            <p className="mt-6 text-foreground/75 leading-relaxed text-lg max-w-2xl">
+              Our facility brings weaving, printing, stitching, quality control
+              and packaging under one roof, supported by custom weaving and
+              yarn-dyed capabilities for buyers who need full programme control.
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-border">
+          {facilities.map((f) => (
+            <div key={f.code} className="grid grid-cols-12 gap-6 py-10 border-b border-border">
+              <div className="col-span-12 md:col-span-4">
+                <p className="eyebrow text-muted-foreground mb-3">{f.code}</p>
+                <h3 className="font-display text-2xl md:text-3xl">{f.title}</h3>
+              </div>
+              <div className="col-span-12 md:col-span-8">
+                <p className="text-foreground/80 leading-relaxed text-lg max-w-2xl">
+                  {f.desc}
+                </p>
+                {f.items && (
+                  <ul className="mt-8 border-t border-border">
+                    {f.items.map((it) => (
+                      <li key={it.n} className="grid grid-cols-12 gap-4 py-5 border-b border-border last:border-b-0">
+                        <span className="col-span-2 md:col-span-1 eyebrow text-muted-foreground">{it.n}</span>
+                        <div className="col-span-10 md:col-span-11">
+                          <h4 className="font-display text-xl md:text-2xl mb-1">{it.title}</h4>
+                          <p className="text-foreground/70 leading-relaxed">{it.desc}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </div>
           ))}
         </div>
-        <p className="mt-12 text-foreground/70 max-w-xl">
-          Currently supplying to exporters and domestic brands, with plans
-          to expand into direct exports.
-        </p>
+      </div>
+    </section>
+  );
+}
+
+function Forte() {
+  return (
+    <section id="forte" className="border-b border-border">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-24 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-10">
+        <div className="md:col-span-4">
+          <p className="eyebrow text-muted-foreground">— Our Forte</p>
+        </div>
+        <div className="md:col-span-8 space-y-10">
+          <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.1] tracking-tight">
+            Screen printing — at scale, in depth.
+          </h2>
+          <p className="text-foreground/80 leading-relaxed text-lg max-w-2xl">
+            Decades of specialisation in screen printing give us a clear edge
+            in colour depth, registration and run-to-run consistency across
+            both apparel and home-textile programmes.
+          </p>
+
+          <div className="border-t border-border">
+            <div className="grid grid-cols-12 gap-6 py-7 border-b border-border">
+              <span className="col-span-2 md:col-span-1 eyebrow text-muted-foreground">01</span>
+              <div className="col-span-10 md:col-span-11">
+                <h3 className="font-display text-xl md:text-2xl mb-1">Rotary Screen Printing</h3>
+                <p className="text-foreground/70 leading-relaxed max-w-xl">
+                  High-speed continuous printing for long-yardage runs — sharp
+                  repeats, clean halftones and consistent shade across full
+                  production lots, ideal for bedsheets and apparel base cloth.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-12 gap-6 py-7 border-b border-border">
+              <span className="col-span-2 md:col-span-1 eyebrow text-muted-foreground">02</span>
+              <div className="col-span-10 md:col-span-11">
+                <h3 className="font-display text-xl md:text-2xl mb-1">Flat-Bed Screen Printing</h3>
+                <p className="text-foreground/70 leading-relaxed max-w-xl">
+                  Flat-bed lines for placement prints, larger repeats and
+                  speciality effects — giving brands flexibility for limited
+                  runs, panel prints and engineered designs.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-12 gap-6 py-7 border-b border-border">
+              <span className="col-span-2 md:col-span-1 eyebrow text-muted-foreground">03</span>
+              <div className="col-span-10 md:col-span-11">
+                <h3 className="font-display text-xl md:text-2xl mb-1">Solid / Plain Dyed</h3>
+                <p className="text-foreground/70 leading-relaxed max-w-xl">
+                  Solid-dyed (plain-dyed) fabrics with reliable shade matching,
+                  fastness and lot-to-lot consistency — supplied as base cloth
+                  or as finished, ready-to-cut yardage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
